@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 2</title>
+</head>
+<style>
+    body {
+        font-size: large;
+    }
+</style>
+<style>
+    div.container{
+    text-align: center;margin-right: 2px;
+}
+ol.myol{
+    display:inline-block;
+    text-align: left;
+}
+
+
+</style>
+
+<body>
+    <h1 style="text-align: center;"> Your Name</h1>
+    <p style="text-align: center;"> Yourname@emailaddressofconvenience.com</p>
+    <div style="text-align: center; margin-left: 2px;">
+        This website is divided into a minimum of three areas,with a <br> minimum of one of the areas
+        having subordinate pages as well.
+        <div style="margin-right:274px ;">
+            Specifcally, the areas are
+
+    
+
+        </div>
+       <div class="container">
+        <ol class="myol">
+            <li>
+                <p> <strong>About me.</strong>This area may have subordinate pages for a fuller <br> Curriculum Vitae or
+                    a resume
+                </p>
+            </li>
+            <li>
+                <p> <strong>Classes.</strong> This area will have subordinate pages for four tasks <br> due as part of the tools
+                    for Information Literacy Class [ Insert <br> current semester here</p>
+            </li>
+            <ul>
+                <li>
+                    Task 3 Markup
+                </li>
+                <li> Task 4 Spreadsheets</li>
+                <li> Task 5 Relational Databases</li>
+                <li> Task 6 Presentational Graphics</li>
+            </ul>
+            <li>
+                <p>
+                    <strong> Intrests.</strong> This area may have subordinate pages for fuller <br> explorations of 
+                    personal intrests
+                </p>
+            </li>
+            <p style="margin-left: -20px;">
+                last updated on [ current date]
+            </p>
+
+        </ol>
+
+       </div>
+
+
+        </div>
+       
+
+</body>
+
+
+
+
+    
+</html>

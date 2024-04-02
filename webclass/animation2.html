@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(back.jpg) ;
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center;
+            float: left;
+            margin-left: 200px;
+            
+         }
+         .icon{
+            font-size: 180%;
+            color: white;
+         }
+         .sun{
+            transform: translate(-50px, -75px);
+            transition: 1s;
+         }
+         .cloud{
+            transform: translate(60px, -45px);
+            transition: 2s;
+         }
+         .certificate{
+            transform: translate(-130px, 75px);
+            transition: 2s;
+         }
+
+         
+      .box:hover .sun{
+        transform: rotate(90deg);
+      }  
+      .box:hover .certificate{
+        transform: rotate(90deg);
+      } 
+      
+      .box:hover .cloud{
+        transform: translate(300px,-90px );
+    }
+    .box2{
+        height: 400px;
+            width: 400px;
+            background-color: black; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: right;
+            margin-right: 200px;
+            
+
+    }
+    .sun2{
+        color: yellow;
+        font-size: 200%;
+        animation: sun;
+        animation-duration: 2s;
+        
+    }
+    .cloud2{
+        color: lightblue;
+        transform: translate(-15px, -90px);
+        animation: cloud;
+        animation-duration: 2s;
+    }
+    .certificate2{
+        color: white;
+        transform: translate(-22px, -60px);
+        animation: certificate;
+        animation-duration: 2s;
+    }
+    @keyframes sun{
+        0%{transform: scale(0.5);}
+    }
+    @keyframes certificate{
+        0%{transform: translate(-30px, -50px);}
+        50%{transform: translate(50px,-100px);}
+        
+    
+    }
+    @keyframes cloud{
+        0%{transform: translate(20px,-40px);}
+        
+    }
+    
+       
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="tooltip">
+        <i class="fa-solid fa-sun icon sun"></i>
+        <i class="fa-solid fa-cloud icon cloud"></i>
+        <i class="fa-solid fa-certificate icon certificate"></i>
+
+        
+          
+        </div>
+
+    </div>
+    <div class="box2">
+        <i class="fa-solid fa-sun sun2"></i>
+        <i class="fa-solid fa-certificate certificate2"></i>
+        <i class="fa-solid fa-cloud icon cloud2"></i>
+       
+
+        
+    </div>
+    
+</body>
+</html>

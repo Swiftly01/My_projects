@@ -1,0 +1,9 @@
+  table,th, td {
+    border: 2px solid black;text-align: center;margin-top: 40px;margin-left: 260px;
+}
+
+#a3,table,th, td{
+  border: 2px solid black;border-collapse: collapse;font-size: larger;
+}
+
+

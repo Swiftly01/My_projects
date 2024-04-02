@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <style>
+        -preview{
+            position: fixed;
+            left: 0;
+            top: 20px;
+            bottom: 20px;
+            background-color: black;
+            border-radius: 10px;
+            width: 90px;
+            
+        }
+        html,body{
+            display: grid;
+            height: 100%;
+            width: 100%;
+            place-items: center;
+            background: linear-gradient(315deg,#ffffff,#d7e1ec);
+        }
+        .wrapper{
+            display: inline-flex;
+        }
+        .wrapper .icon{
+            margin: 0 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+        }
+        .wrapper .icon span{
+            height: 50px;
+            width: 50px;
+            display: block;
+            background: #fff;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 2;
+        }
+        .wrapper .icon span i{
+            font-size: 25px;
+            line-height: 60px;
+        }
+        .wrapper .icon .tooltip{
+            position: absolute;
+            top: 0px;
+            background: #fff;
+            font-size: 20px;
+            padding: 10px 18px;
+            border-radius: 25px;
+            box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+        }
+        .wrapper .icon:hover .tooltip{
+            opacity: 1;
+            pointer-events: auto;
+            top: -70px;
+        }
+        .wrapper .icon .tooltip:before{
+            
+            position: absolute;
+            content: "";
+            height: 15px;
+            width: 15px;
+            background: #fff;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+        }
+        .wrapper .icon:hover span,
+        .wrapper .icon:hover .tooltip{
+            text-shadow: opx -1px 0px rgba( 0,0,0,0.4);
+        }
+      
+    </style>
+</head>
+<body >
+    <div class="sidebar-preview">
+        <div class="wrapper">
+            <div class="icon house">
+                <div class="tooltip">Home </div>
+                <span><i class="fa-solid fa-house icons"></i></span>
+
+            </div>
+             <div class="icon message">
+                <div class="tooltip">messages</div>
+                <span><i class="fa-solid fa-message icons"></i></span>
+
+            </div>
+             <div class="icon groups">
+                <div class="tooltip">Customers </div>
+                <span><i class="fa-solid fa-user-group icons"></i></span>
+
+            </div>
+             <div class="icon folder">
+                <div class="tooltip">Projects </div>
+                <span><i class="fa-regular fa-folder icons"></i></span>
+
+            </div>
+             <div class="icon archive">
+                <div class="tooltip">Resources </div>
+                <span><i class="fa-solid fa-box-archive icons"></i></span>
+
+            </div>
+             <div class="icon question">
+                <div class="tooltip">Help </div>
+                <span><i class="fa-solid fa-circle-question icons"></i></span>
+
+            </div>
+             <div class="icon gear">
+                <div class="tooltip">Settings </div>
+                <span><i class="fa-solid fa-gear icons"></i></span>
+
+            </div>
+
+        </div>
+
+
+
+
+        
+      
+     
+        
+      
+       
+       
+       
+   
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <style>
+        .sidebar{
+            position: fixed;
+            left: 10px;
+            top: 10px;
+            bottom: 10px;
+            background-color: rgb(224, 219, 219);
+            width: 90px;
+            border-radius: 10px;    
+        }
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+            font-size: 150%;
+            visibility: visible;
+        
+            
+            
+        
+            
+    
+        }
+        .tooltiptext{
+            position: absolute;
+            left: 100px;
+            color: rgb(71, 71, 224);
+            background: rgb(224, 219, 219);
+            border-radius: 10px;
+            padding: 5px 2px;
+            visibility: hidden;
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+        .box{
+            display: flex;
+            height:40px;
+            width:40px  ;
+            background-color: blue;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+                
+        }
+        .back{
+            
+            
+            
+            
+        }
+        .back:hover{
+            background-color: lightblue;
+            border-radius: 15px;
+            border: 1px solid rgb(71, 71, 224) ;
+        }
+        
+
+
+        
+        
+    </style>
+</head>
+<body style="height: 1000px;background-color: rgb(184, 170, 170);">
+    <div class="sidebar">
+        
+            <div class="tooltip">
+                <i class="fa-solid fa-house icons back"></i>
+                <span class="tooltiptext"> Home</span>
+
+            </div>
+            
+        
+        <div class="tooltip">
+            <i class="fa-solid fa-message icons back"></i>
+            <span class="tooltiptext"> messages</span>
+        </div>
+        <div class="tooltip">
+            <i class="fa-solid fa-user-group icons back"></i>
+            <span class="tooltiptext">Customers</span>
+        </div>
+        <div class="tooltip">
+            <i class="fa-regular fa-folder icons back"></i>
+            <span class="tooltiptext"> Projects</span>
+        </div>
+        <div class="tooltip">
+            <i class="fa-solid fa-box-archive icons back"></i>
+            <span class="tooltiptext">Resources</span>
+        </div>
+        <div class="tooltip">
+            <i class="fa-solid fa-circle-question icons back"></i>
+            <span class="tooltiptext">Help</span>
+        </div>
+        <div class="tooltip">
+            <i class="fa-solid fa-gear icons back"></i>
+            <span class="tooltiptext"> Settings</span>
+        </div>
+    
+        
+
+    </div>
+    
+</body>
+</html>

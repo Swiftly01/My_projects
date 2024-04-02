@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        body,html{
+            height: 100%;
+        }
+        .picture{
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            z-index: 100;
+            transition: 2s;
+           
+        }
+        .tooltip{
+            position: relative;
+            transition:2s;
+        }
+        .tooltiptext{
+            position: absolute;
+            width: 100px;
+            left: 30%;
+            top: 50%;
+            transition: 2s;
+            visibility: hidden;
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+            transform: translateX(-350px);
+
+        }
+         .picture:hover{ transform:scale(2);border-radius: 0%;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="tooltip">
+        <img class="picture" src="back.jpg" alt="">
+        <span class="tooltiptext">Photo by silva Danconescu</span>
+    </div>
+    
+</body>
+</html>
